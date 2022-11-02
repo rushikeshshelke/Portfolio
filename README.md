@@ -14,5 +14,5 @@ Note : To get better of web app please use Firefox web Browser
 ```
 ### Usage
 ```
-App URL : https://flask-short-url-app.herokuapp.com/
+App URL : https://flask-portfolio-web-app.herokuapp.com/
 ```
