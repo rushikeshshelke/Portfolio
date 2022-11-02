@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="{{ project['name'] }}"
+            />
+            <article class="project">
+                <article class="project__content" >
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+                    <p>
+                        This is a web application implemented using Python and Flask-Restful framework.
+                        Web page is designed and implemented using HTML and CSS. Application data is stored using mongodb database.
+
+                        It helps user to write day today logs and store them using mongodb database. App also shows recent logs based on date.
+                    </p>
+                    <p>
+                        This implmentation follows standard coding practices like usage of Object Oriented Programming, 
+                        Reusability by modularizing code, Exception handling, Storing application logs for future auditing and easy debugging.  
+                        Code base of this application can be seen here <a class="project__heading-codebase" href="{{ project['github'] }}" target="_blank">github</a>
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading-meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">Python</li>
+                            <li class="technology-list__item">Flask-Restful</li>
+                            <li class="technology-list__item">SQlAlchemy</li>
+                            <li class="technology-list__item">Postgres-SQL</li>
+                        </ul>
+
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}" target="_blank">
+                        <button class="cta_button" type="button">Visit Store</button>
+                    </a>
+
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, "sans-serif";
+}
+
+body{
+    margin-top: 50px;
+}
+
+.header {
+    text-align: center;
+}
+
+.nav {
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin: inherit auto 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #5c6b70;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    color: #163291;
+    font-weight: bold;
+}
+
+.nav__link:not(:last-of-type) {
+    margin-right: 125px;
+}
+
+.nav__link--active {
+    color: black;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #202d31;
+    padding: 50px 0;
+    margin: 20px 0 0 0;
+    border: 1.5px solid black;
+    color: white;
+    font-size: 12px;
+    display: flex;
+}
+
+.footer__content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__item {
+    color: inherit;
+    margin-bottom: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+}
+
+.footer__item:hover {
+    text-decoration: none;
+    color: rgb(137, 192, 206);
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main--about {
+    max-width: 500px;
+    padding: 0 5px;
+    line-height: 150%;
+    flex-direction: column;
+}
+
+.profile {
+    width: 170px;
+    height: 170px;
+    align-self: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact__details {
+    margin-left: 1ch;
+}
+
+.contact__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 1.5px 0 0 #4cafda;
+}
+
+.contact__link:hover {
+    color: #0f4861;
+    font-weight: bold;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 25px;
+    justify-content: center;
+    justify-items: center;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+@media (min-width: 720px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 400px;
+    }
+}
+
+.project-card {
+    padding: 2.5px 2.5px;    
+}
+
+.project-card__image {
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card__meta {
+    padding: 0px 5px;
+}
+
+.project-card__name {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    color: #1c2026;
+}
+
+.project-card:hover .project-card__image {
+    transform: translateY(-0.75rem);
+}
+
+.project-card:hover .project-card__name {
+    text-decoration: underline;
+}
+
+.categories {
+    display: flex;
+    padding: 0;
+    color: #163291;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+    font-size: 0.85rem;
+}
+
+.categories__tag:not(:last-of-type)::after{
+    margin: 0 0.25rem;
+    content: "|";
+}
+
+.u-bare-link {
+    text-decoration: none;
+}
+
+.cta_button {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    color: white;
+    padding: 10px 30px;
+    background-color: #f59338;
+    margin-top: 1rem;
+}
+
+.cta_button:hover{
+    background-color: #dd8430;
+}
+.hero {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 0 1rem;
+    max-width: 50rem;
+}
+
+.project__content {
+    line-height: 1.75rem;
+    flex: 7;
+    margin-right: 3rem;
+    padding: 0;
+}
+
+.project__heading:not(.project__heading-meta) {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+.project__heading-meta {
+    margin-bottom: 1rem;
+    line-height: inherit;
+    font-size: 1rem;
+}
+
+.project__meta-group {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #d4eafa
+}
+
+.technology-list {
+    margin: 0;
+    padding-left: 1.5rem;
+    line-height: 1.25rem;
+}
+
+.project__heading-codebase {
+    text-decoration: none;
+    color: blue;
+}
+
+.project__heading-codebase:hover {
+    color: #5175ec;
+}
+
+.main--error {
+    text-align: center;
+}
