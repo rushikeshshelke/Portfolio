@@ -30,7 +30,7 @@ class GlobalVariables:
             "hero": "img/store_original_800x300.png",
             "categories": ["python", "rest-api", "swagger"],
             "slug": "store-api",
-            "prod": "",
+            "prod": "https://store-item-rest-api-v1.herokuapp.com/api/docs/",
             "github": "https://github.com/rushikeshshelke/Store-API"
         },
         {
